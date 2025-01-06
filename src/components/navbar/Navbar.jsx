@@ -1,0 +1,20 @@
+import React from 'react'
+import './Navbar.css'
+import logo from '../../assets/IOFLogo_nobg.png'
+
+const Navbar = () => {
+  return (
+    <nav className='container'>
+        <img src={logo} alt="" className='logo'/>
+        <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Services</li>
+            <li>Careers</li>
+            <li><button className='btn'>Contact</button></li>
+        </ul>
+    </nav>
+  )
+}
+
+export default Navbar
