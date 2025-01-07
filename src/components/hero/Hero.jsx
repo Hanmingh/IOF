@@ -6,9 +6,10 @@ const Hero = () => {
   return (
     <div className='hero container'>
         <div className='hero-text'>
-            <h1>High-Tech Solutions for Industry Optimisation & Forecasting, At Your Fingertips</h1>
-            <p>Unlock your potential with our high-tech solutions, delivering clarity and precision for every challenge your business faces.</p>
-            <button className='btn'>Explore more <img src={dark_arrow} alt=""/></button>
+            <h1>Transforming Industry with Cutting-Edge Algorithmic Solutions</h1>
+            <p>Specializing in Machine Learning and Optimization for Finance, 
+            Logistics, Healthcare, and Beyond</p>
+            <button className='btn'>Learn more <img src={dark_arrow} alt=""/></button>
         </div>
     </div>
   )

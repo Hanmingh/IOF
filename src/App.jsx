@@ -3,6 +3,8 @@ import Navbar from './components/navbar/Navbar'
 import Hero from './components/hero/Hero'
 import Services from './components/services/services'
 import Title from './components/title/Title'
+import About from './components/about/About'
+import Contact from './components/contact/Contact'
 
 const App = () => {
   return (
@@ -12,6 +14,9 @@ const App = () => {
       <div className="container">
         <Title subTitle='Our SERVICE' title='What We Provide'/>
         <Services/>
+        <About/>
+        <Title subTitle='Contact Us' title='Get in Touch'/>
+        <Contact/>
       </div>
     </div>
   )
