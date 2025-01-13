@@ -58,7 +58,7 @@ const Contact = () => {
                 <input type="email" name="email" placeholder='Enter your Business Email' required/>
                 <label>Solution of Interest</label>
                 <textarea name="message" rows="6" placeholder='Enter your Solution of Interest' required></textarea>
-                <button type='submit' className='btn darkl-btn'>Submit</button>
+                <button type='submit' className='btn dark-btn'>Submit</button>
             </form>
             <span>{result}</span>
         </div>
