@@ -6,6 +6,31 @@ import telephone from '../../assets/telephone.png'
 import locations from '../../assets/locations.png'
 
 const Contact = () => {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "9de6b45f-33bc-4af6-af72-fb395b01217f");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div className='contact'>
         <div className='contact-col'>
@@ -22,7 +47,7 @@ const Contact = () => {
             </ul>
         </div>
         <div className='contact-col'>
-            <form>
+            <form onSubmit={onSubmit}>
                 <label>First Name</label>
                 <input type="text" name='first_name' placeholder='Enter your First Name' required/>
                 <label>Last Name</label>
@@ -35,7 +60,7 @@ const Contact = () => {
                 <textarea name="message" rows="6" placeholder='Enter your Solution of Interest' required></textarea>
                 <button type='submit' className='btn darkl-btn'>Submit</button>
             </form>
-            <span>sending</span>
+            <span>{result}</span>
         </div>
     </div>
   )

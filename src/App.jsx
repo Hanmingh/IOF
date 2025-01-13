@@ -5,6 +5,7 @@ import Services from './components/services/services'
 import Title from './components/title/Title'
 import About from './components/about/About'
 import Contact from './components/contact/Contact'
+import Footer from './components/footer/Footer'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <About/>
         <Title subTitle='Contact Us' title='Get in Touch'/>
         <Contact/>
+        <Footer/>
       </div>
     </div>
   )
