@@ -1,5 +1,5 @@
 import React from 'react'
-import './services.css'
+import './Services.css'
 import hospital from '../../assets/hospital.jpg'
 import maritime from '../../assets/maritime.jpg'
 import energy from '../../assets/energy.jpg'
