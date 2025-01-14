@@ -60,12 +60,18 @@
 
 /* ----- media query ----- */
 @media (max-width: 800px){
-    .about{
+    .avatar{
+        width: 20%;
+    }
+    .partner-icon{
+        width: 23%;
+    }
+    .about-container{
         flex-direction: column;
     }
     .about-left{
+        margin-top: 20px;;
         flex-basis: 100%;
-        margin: 20px;
         order: 2;
     }
     .about-right{
