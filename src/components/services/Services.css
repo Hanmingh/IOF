@@ -14,7 +14,8 @@
 }
 
 .service{
-    flex-basis: 33%;
+    margin: 20px auto;
+    flex-basis: 35%;
     position: relative;
 }
 

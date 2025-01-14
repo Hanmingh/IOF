@@ -9,6 +9,8 @@ import quantum from '../../assets/quantum.jpg'
 import medical_icon from '../../assets/medical-icon.png'
 import maritime_icon from '../../assets/maritime-icon.png'
 import energy_icon from '../../assets/energy-icon.png'
+import market_icon from '../../assets/market-icon.png'
+import quantum_icon from '../../assets/quantum-icon.png'
 
 const Services = () => {
   return (
@@ -35,17 +37,17 @@ const Services = () => {
             </div>
         </div>
         <div className="service">
-            <img src={maritime} alt="" />
+            <img src={market} alt="" />
             <div className="caption">
-              <img src={maritime_icon} alt="" />
-              <p>Navigating Maritime Logistics</p>
+              <img src={market_icon} alt="" />
+              <p>The Art of Dynamic Trading Strategies</p>
             </div>
         </div>
         <div className="service">
-            <img src={energy} alt="" />
+            <img src={quantum} alt="" />
             <div className="caption">
-              <img src={energy_icon} alt="" />
-              <p>Revolutionizing Energy Infrastructure Management</p>
+              <img src={quantum_icon} alt="" />
+              <p>Harnessing Quantum Computing for Financial Mavericks</p>
             </div>
         </div>
     </div>
