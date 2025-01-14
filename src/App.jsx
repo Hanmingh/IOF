@@ -13,9 +13,9 @@ const App = () => {
       <Navbar/>
       <Hero/>
       <div className="container">
+        <About/>
         <Title subTitle='Our SERVICE' title='What We Provide'/>
         <Services/>
-        <About/>
         <Title subTitle='Contact Us' title='Get in Touch'/>
         <Contact/>
         <Footer/>
