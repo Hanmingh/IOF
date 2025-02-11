@@ -41,7 +41,7 @@ const Contact = () => {
                 inquiries, project ideas, or feedback, and let us work together to revolutionize industry 
                 practices and drive innovation.</p>
             <ul>
-                <li><img src={email} alt="" />ZUXI.23@ichat.sp.edu.sg</li>
+                <li><img src={email} alt="" />info@iof.sg</li>
                 <li><img src={telephone} alt="" />+65 XXXX-XXXX</li>
                 <li><img src={locations} alt="" />ADDRESS</li>
             </ul>
