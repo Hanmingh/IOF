@@ -23,7 +23,7 @@ const Hero = ({
   return (
     <section className="relative isolate w-screen -ml-[50vw] -mr-[50vw] left-1/2 right-1/2 overflow-hidden mt-[-56px] md:mt-[-64px] mb-[-2rem] md:mb-[-3rem] min-h-[calc(100svh+56px)] md:min-h-[calc(100svh+64px)]">
       <img
-        src={backgroundImage}
+        src={`${import.meta.env.BASE_URL}${backgroundImage.replace(/^\//,'')}`}
         alt="Hero background"
         className="absolute inset-0 h-full w-full object-cover object-center"
       />
