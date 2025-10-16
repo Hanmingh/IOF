@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 interface HeroProps {
@@ -38,10 +39,10 @@ const Hero = ({
             </p>
             <div className="mt-4 flex items-center justify-center">
               <Button asChild size="lg" className="bg-white text-[#cc3525] hover:bg-white/90">
-                <a href={cta.url}>
+                <Link to={cta.url}>
                   <span className="mr-2">{cta.text}</span>
                   <ArrowRight className="inline-block size-5" />
-                </a>
+                </Link>
               </Button>
             </div>
           </div>
