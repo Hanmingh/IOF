@@ -1,5 +1,6 @@
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
-// local assets available in /src/assets
+import teamDefault from '@/assets/team/default-icon.jpg'
+import partnerI2Damo from '@/assets/partners/I2DAMO.png'
 
 const About_Us = () => {
   return (
@@ -89,14 +90,14 @@ function getInitials(name: string) {
 }
 
 const team = [
-  { name: 'member1', title: 'Principal Scientist', photo: '/src/assets/team/default-icon.jpg' },
-  { name: 'member2', title: 'Optimization Lead', photo: '/src/assets/team/default-icon.jpg' },
-  { name: 'member3', title: 'ML Engineer', photo: '/src/assets/team/default-icon.jpg' },
-  { name: 'member4', title: 'Data Scientist', photo: '/src/assets/team/default-icon.jpg' },
+  { name: 'member1', title: 'Principal Scientist', photo: teamDefault },
+  { name: 'member2', title: 'Optimization Lead', photo: teamDefault },
+  { name: 'member3', title: 'ML Engineer', photo: teamDefault },
+  { name: 'member4', title: 'Data Scientist', photo: teamDefault },
 ]
 
 const partners = [
-  { name: 'I2DAMO', logo: '/src/assets/partners/I2DAMO.png' },
+  { name: 'I2DAMO', logo: partnerI2Damo },
 ]
 
 export default About_Us
