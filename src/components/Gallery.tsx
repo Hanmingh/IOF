@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -116,13 +117,13 @@ const Gallery = ({
               <h2 className="mb-2 text-3xl font-bold text-[#cc3525] md:mb-3 md:text-4xl lg:mb-4">
                 {heading}
               </h2>
-              <a
-                href={demoUrl}
+              <Link
+                to={demoUrl}
                 className="group inline-flex items-center gap-1 text-sm font-semibold text-[#cc3525] md:text-base lg:text-lg"
               >
                 Contact us
                 <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-1" />
-              </a>
+              </Link>
             </div>
             <div className="mt-8 flex shrink-0 items-center justify-start gap-2">
               <Button
@@ -172,8 +173,8 @@ const Gallery = ({
           <CarouselContent className="hide-scrollbar w-full max-w-full md:-mr-4 md:ml-8 2xl:ml-[max(8rem,calc(50vw-700px+1rem))] 2xl:mr-[max(0rem,calc(50vw-700px-1rem))]">
             {items.map((item) => (
               <CarouselItem key={item.id} className="ml-8 md:max-w-[452px]">
-                <a
-                  href={item.url}
+                <Link
+                  to={item.url}
                   className="group flex flex-col justify-between rounded-xl border bg-background/60 shadow-sm transition hover:shadow-md"
                 >
                   <div className="relative">
@@ -200,7 +201,7 @@ const Gallery = ({
                       <ArrowRight className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
                     </div>
                   </div>
-                </a>
+                </Link>
               </CarouselItem>
             ))}
           </CarouselContent>
