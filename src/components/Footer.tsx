@@ -67,15 +67,15 @@ const Footer = ({
           <div className="grid grid-cols-2 justify-items-center gap-8 md:gap-10 lg:grid-cols-4">
             <div className="col-span-2 mb-8 text-center lg:mb-0">
               <div className="flex items-center justify-center gap-3">
-                {logo.url.startsWith('/') ? (
-                  <Link to={logo.url} className="flex items-center">
-                    <img src={logo.src} alt={logo.alt} title={logo.title} className="h-12 md:h-14 rounded invert brightness-0" />
-                  </Link>
-                ) : (
-                  <a href={logo.url} className="flex items-center">
-                    <img src={logo.src} alt={logo.alt} title={logo.title} className="h-12 md:h-14 rounded invert brightness-0" />
-                  </a>
-                )}
+                 {logo.url.startsWith('/') ? (
+                   <Link to={logo.url} className="flex items-center">
+                     <img src={`${import.meta.env.BASE_URL}${logo.src.replace(/^\//,'')}`} alt={logo.alt} title={logo.title} className="h-12 md:h-14 rounded invert brightness-0" />
+                   </Link>
+                 ) : (
+                   <a href={logo.url} className="flex items-center">
+                     <img src={`${import.meta.env.BASE_URL}${logo.src.replace(/^\//,'')}`} alt={logo.alt} title={logo.title} className="h-12 md:h-14 rounded invert brightness-0" />
+                   </a>
+                 )}
               </div>
               <div className="mt-4 flex items-center justify-center gap-3 md:gap-4">
                 <a href="#" aria-label="Twitter" className="rounded-full border border-white/20 p-2 text-white/80 hover:bg-white/15 hover:text-white">

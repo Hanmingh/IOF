@@ -30,10 +30,13 @@ jobs:
       - name: Install deps
         run: npm ci
 
-      - name: Build
-        run: npm run build
+       - name: Build (project base)
+         run: npm run build -- --base=/IOF/
 
-      - name: Upload artifact
+       - name: Copy 404.html
+         run: node -e "require('fs').copyFileSync('dist/index.html','dist/404.html')"
+
+       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist

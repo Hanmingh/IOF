@@ -53,7 +53,7 @@ const Navbar = ({
           {/* Left: Logo only */}
           <div className="flex items-center justify-center">
             <Link to={logo.url} className="flex items-center">
-              <img src={logo.src} className="max-h-17 rounded border-2 border-[#cc3525]" alt={logo.alt} />
+              <img src={`${import.meta.env.BASE_URL}${logo.src.replace(/^\//,'')}`} className="max-h-17 rounded border-2 border-[#cc3525]" alt={logo.alt} />
             </Link>
           </div>
           {/* Center: Navigation */}
@@ -74,7 +74,7 @@ const Navbar = ({
             {/* Logo */}
             <Link to={logo.url} className="flex items-center gap-2">
               <img
-                src={logo.src}
+                src={`${import.meta.env.BASE_URL}${logo.src.replace(/^\//,'')}`}
                 className="max-h-8 rounded border-2 border-[#a62a1e]"
                 alt={logo.alt}
               />
@@ -90,7 +90,7 @@ const Navbar = ({
                   <SheetTitle>
                     <Link to={logo.url} className="flex items-center gap-2">
                       <img
-                        src={logo.src}
+                        src={`${import.meta.env.BASE_URL}${logo.src.replace(/^\//,'')}`}
                         className="max-h-8 rounded border-2 border-[#a62a1e]"
                         alt={logo.alt}
                       />
