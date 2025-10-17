@@ -44,24 +44,26 @@ const About_Us = () => {
         </div>
       </section>
 
-      {/* Our Team */}
-      <section>
-        <div className="space-y-8 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-[#cc3525] md:text-4xl">Our Team</h2>
-          <div className="mx-auto grid max-w-5xl grid-cols-2 gap-4 sm:grid-cols-3 md:gap-8 lg:grid-cols-3 xl:grid-cols-4">
-            {team.map((member) => (
-              <div key={member.name} className="flex flex-col items-center gap-3">
-                <Avatar className="size-20 md:size-24 border-2 border-[#cc3525] ring-2 ring-[#cc3525]/20">
-                  <AvatarImage src={member.photo} alt={member.name} />
-                  <AvatarFallback>{getInitials(member.name)}</AvatarFallback>
-                </Avatar>
-                <div className="text-sm font-medium">{member.name}</div>
-                <div className="text-xs text-muted-foreground">{member.title}</div>
-              </div>
-            ))}
+      {/* Our Team (temporarily hidden) */}
+      {false && (
+        <section>
+          <div className="space-y-8 text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-[#cc3525] md:text-4xl">Our Team</h2>
+            <div className="mx-auto grid max-w-5xl grid-cols-2 gap-4 sm:grid-cols-3 md:gap-8 lg:grid-cols-3 xl:grid-cols-4">
+              {team.map((member) => (
+                <div key={member.name} className="flex flex-col items-center gap-3">
+                  <Avatar className="size-20 md:size-24 border-2 border-[#cc3525] ring-2 ring-[#cc3525]/20">
+                    <AvatarImage src={member.photo} alt={member.name} />
+                    <AvatarFallback>{getInitials(member.name)}</AvatarFallback>
+                  </Avatar>
+                  <div className="text-sm font-medium">{member.name}</div>
+                  <div className="text-xs text-muted-foreground">{member.title}</div>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* Our Partners */}
       <section>
