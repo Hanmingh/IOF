@@ -21,7 +21,7 @@ const Career = () => {
             <p className="text-lg leading-relaxed">
               For internship opportunities, contact
               {' '}
-              <a href="mailto:info@iog.sg" className="font-semibold text-[#cc3525] hover:underline">info@iog.sg</a>.
+              <a href="mailto:info@iof.sg" className="font-semibold text-[#cc3525] hover:underline">info@iof.sg</a>.
             </p>
           </div>
         </div>
