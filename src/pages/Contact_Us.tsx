@@ -10,7 +10,7 @@ interface ContactProps {
 const Contact_Us = ({
   title = "Contact Us",
   description = "We’d love to hear from you. Reach out to us at any time.",
-  email = "hanming@nus.edu.sg"//"info@iof.sg",
+  email = "info@iof.sg",
 }: ContactProps) => {
   const [name, setName] = useState("")
   const [affiliation, setAffiliation] = useState("")
