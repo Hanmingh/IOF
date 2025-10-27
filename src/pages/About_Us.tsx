@@ -1,6 +1,7 @@
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
 import teamDefault from '@/assets/team/default-icon.jpg'
 import partnerI2Damo from '@/assets/partners/I2DAMO.png'
+import partnerSOAI from '@/assets/partners/SoAI_logo.svg'
 
 const About_Us = () => {
   return (
@@ -100,6 +101,7 @@ const team = [
 
 const partners = [
   { name: 'I2DAMO', logo: partnerI2Damo },
+  { name: 'SoAI', logo: partnerSOAI },
 ]
 
 export default About_Us
