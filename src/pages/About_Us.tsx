@@ -54,7 +54,7 @@ const About_Us = () => {
               {team.map((member) => (
                 <div key={member.name} className="flex flex-col items-center gap-3">
                   <Avatar className="size-20 md:size-24 border-2 border-[#cc3525] ring-2 ring-[#cc3525]/20">
-                    <AvatarImage src={member.photo} alt={member.name} />
+                  <AvatarImage src={member.photo} alt={member.name} loading="eager" fetchPriority="high" />
                     <AvatarFallback>{getInitials(member.name)}</AvatarFallback>
                   </Avatar>
                   <div className="text-sm font-medium">{member.name}</div>
@@ -73,7 +73,7 @@ const About_Us = () => {
           <div className="mx-auto grid max-w-5xl grid-cols-2 items-start justify-center gap-8 sm:grid-cols-3 md:gap-10 md:grid-cols-4">
             {partners.map((p, idx) => (
               <div key={idx} className="flex items-center justify-center">
-                <img src={p.logo} alt={p.name} className="h-14 md:h-20 object-contain" />
+                <img src={p.logo} alt={p.name} className="h-14 md:h-20 object-contain" loading="eager" fetchPriority="high" />
               </div>
             ))}
           </div>

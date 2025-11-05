@@ -184,6 +184,8 @@ const Gallery = ({
                           src={item.image}
                           alt={item.title}
                           className="h-full w-full object-cover object-center"
+                          loading="eager"
+                          fetchPriority="high"
                         />
                         <div className="absolute inset-0 bg-[#cc3525]/10 transition group-hover:bg-[#cc3525]/20" />
                       </div>

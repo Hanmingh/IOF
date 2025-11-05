@@ -5,7 +5,7 @@ const ServiceEnergy = () => {
   return (
     <div className="space-y-12">
       <section className="relative isolate w-full overflow-hidden rounded-xl">
-        <img src={energyImg} alt="Energy infrastructure" className="absolute inset-0 h-full w-full object-cover object-center" />
+        <img src={energyImg} alt="Energy infrastructure" className="absolute inset-0 h-full w-full object-cover object-center" loading="eager" fetchPriority="high" />
         <div className="absolute inset-0 bg-[#cc3525]/40" />
         <div className="relative z-10 flex min-h-[48vh] items-center justify-center px-4 py-16 text-center md:min-h-[56vh]">
           <div className="mx-auto max-w-4xl space-y-4">

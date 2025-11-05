@@ -27,6 +27,8 @@ const Hero = ({
         src={`${import.meta.env.BASE_URL}${backgroundImage.replace(/^\//,'')}`}
         alt="Hero background"
         className="absolute inset-0 h-full w-full object-cover object-center"
+        loading="eager"
+        fetchPriority="high"
       />
       <div className="absolute inset-0 bg-[#1b2a49]/50" />
       <div className="absolute inset-0 z-10 flex items-center justify-center">
